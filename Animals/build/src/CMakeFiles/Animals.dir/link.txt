@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libAnimals.a CMakeFiles/Animals.dir/animalClasses.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libAnimals.a
