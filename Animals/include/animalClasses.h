@@ -4,25 +4,42 @@ class Animal
 {
 protected:
     Animal() {}
+
 public:
     virtual void speak();
 };
 
-class Dog : public Animal
+class Mammal : public Animal {
+};
+
+class Bird : public Animal {
+};
+
+class Dog : public Mammal
 {
 public:
-    Dog(){}
+    Dog() {}
     void speak();
 };
-class Cat : public Animal
+class Cat : public Mammal
 {
 public:
-    Cat(){}
+    Cat() {}
     void speak();
 };
-class Budgie : public Animal
+class Budgie : public Bird
 {
 public:
-    Budgie(){}
+    Budgie() {}
+    void speak();
+};
+
+class Labrador : public Dog
+{
+};
+
+class Terrier : public Dog
+{
+    public: 
     void speak();
 };

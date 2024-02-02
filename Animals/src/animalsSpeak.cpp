@@ -8,10 +8,14 @@ int main()
     Dog d;
     Cat c;
     Budgie b;
+    Labrador l;
+    Terrier t;
 
     animalVector.push_back(std::make_unique<Dog>(d));
     animalVector.push_back(std::make_unique<Cat>(c));
     animalVector.push_back(std::make_unique<Budgie>(b));
+    animalVector.push_back(std::make_unique<Labrador>(l));
+    animalVector.push_back(std::make_unique<Terrier>(t));
 
     for (std::unique_ptr<Animal> &i : animalVector)
     {
