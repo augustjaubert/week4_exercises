@@ -1,6 +1,10 @@
 #include "Polynomial.h"
 
-int quadratic(int a, int b, int c, int x)
+template <typename T>
+T quadratic(T a, T b, T c, T x)
 {
-    return a*x*x + b*x + c;
+    return a * x * x + b * x + c;
 }
+template int quadratic(int,int,int,int);
+template double quadratic(double,double,double,double);
+template float quadratic(float,float,float,float);
